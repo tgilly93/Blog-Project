@@ -1,0 +1,52 @@
+body {
+    background:url(cave_back.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%; 
+}
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "hd hd hd hd hd hd hd hd hd" 
+                         "sd sd sd main main main main main main"
+                         "ft ft ft ft ft ft ft ft ft"
+}
+
+.header {
+    display:flex;
+    grid-area: hd;
+    font: 65px Apple Chancery, cursive;
+    justify-content: center;
+    align-items: flex-start;
+    color: lightskyblue;
+}
+
+.sidebar {
+    grid-area: sd;
+}
+
+.content {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: ft;
+}
+
+.box {
+    border: 1px solid blue;
+}
+
+.button {
+    background-color: aqua;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+}
